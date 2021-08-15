@@ -1,0 +1,692 @@
+Count: 551  Time=0.06s (33s)  Lock=0.00s (0s)  Rows=20.0 (11020), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE stock > N ORDER BY price ASC, id ASC LIMIT N
+
+Count: 551  Time=0.06s (30s)  Lock=0.00s (0s)  Rows=20.0 (11020), isucon[isucon]@localhost
+  SELECT * FROM estate ORDER BY rent ASC, id ASC LIMIT N
+
+Count: 347  Time=0.09s (29s)  Lock=0.00s (0s)  Rows=20.0 (6940), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE (door_width >= N AND door_height >= N) OR (door_width >= N AND door_height >= N) OR (door_width >= N AND door_height >= N) OR (door_width >= N AND door_height >= N) OR (door_width >= N AND door_height >= N) OR (door_width >= N AND door_height >= N) ORDER BY popularity DESC, id ASC LIMIT N
+
+Count: 375  Time=0.06s (22s)  Lock=0.00s (0s)  Rows=24.4 (9150), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE rent >= N AND rent < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 375  Time=0.05s (17s)  Lock=0.00s (0s)  Rows=1.0 (375), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE rent >= N AND rent < N
+
+Count: 201  Time=0.06s (12s)  Lock=0.00s (0s)  Rows=24.6 (4935), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND price < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 230  Time=0.05s (11s)  Lock=0.00s (0s)  Rows=24.7 (5675), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE rent >= N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 155  Time=0.07s (11s)  Lock=0.00s (0s)  Rows=185.2 (28701), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE latitude <= N.N AND latitude >= N.N AND longitude <= N.N AND longitude >= N.N ORDER BY popularity DESC, id ASC
+
+Count: 83925  Time=0.00s (11s)  Lock=0.00s (0s)  Rows=1.8 (153124), isucon[isucon]@localhost
+  #
+
+Count: 204  Time=0.05s (10s)  Lock=0.00s (0s)  Rows=24.3 (4965), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE rent < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 201  Time=0.05s (9s)  Lock=0.00s (0s)  Rows=1.0 (201), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND price < N AND stock > N
+
+Count: 230  Time=0.04s (9s)  Lock=0.00s (0s)  Rows=1.0 (230), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE rent >= N
+
+Count: 148  Time=0.06s (8s)  Lock=0.00s (0s)  Rows=24.9 (3685), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_width >= N AND door_width < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 28701  Time=0.00s (8s)  Lock=0.00s (0s)  Rows=0.7 (21396), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE id = N AND ST_Contains(ST_PolygonFromText('S'), ST_GeomFromText('S'))
+
+Count: 204  Time=0.04s (8s)  Lock=0.00s (0s)  Rows=1.0 (204), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE rent < N
+
+Count: 148  Time=0.05s (7s)  Lock=0.00s (0s)  Rows=1.0 (148), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_width >= N AND door_width < N
+
+Count: 105  Time=0.07s (7s)  Lock=0.00s (0s)  Rows=25.0 (2625), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE kind = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 121  Time=0.06s (7s)  Lock=0.00s (0s)  Rows=24.5 (2965), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE color = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 105  Time=0.06s (6s)  Lock=0.00s (0s)  Rows=24.1 (2535), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE height >= N AND height < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 112  Time=0.06s (6s)  Lock=0.00s (0s)  Rows=24.5 (2740), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height >= N AND door_height < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 105  Time=0.06s (5s)  Lock=0.00s (0s)  Rows=1.0 (105), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE kind = 'S' AND stock > N
+
+Count: 121  Time=0.05s (5s)  Lock=0.00s (0s)  Rows=1.0 (121), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE color = 'S' AND stock > N
+
+Count: 88  Time=0.06s (5s)  Lock=0.00s (0s)  Rows=24.3 (2140), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_width >= N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 105  Time=0.05s (5s)  Lock=0.00s (0s)  Rows=1.0 (105), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE height >= N AND height < N AND stock > N
+
+Count: 112  Time=0.04s (4s)  Lock=0.00s (0s)  Rows=1.0 (112), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height >= N AND door_height < N
+
+Count: 71  Time=0.06s (4s)  Lock=0.00s (0s)  Rows=24.6 (1745), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 88  Time=0.05s (3s)  Lock=0.00s (0s)  Rows=1.0 (88), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_width >= N
+
+Count: 70  Time=0.05s (3s)  Lock=0.00s (0s)  Rows=24.8 (1735), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_width < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 66  Time=0.05s (3s)  Lock=0.00s (0s)  Rows=25.0 (1650), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE height >= N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 60  Time=0.06s (3s)  Lock=0.00s (0s)  Rows=25.0 (1500), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE width >= N AND width < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 71  Time=0.05s (3s)  Lock=0.00s (0s)  Rows=1.0 (71), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND stock > N
+
+Count: 57  Time=0.05s (3s)  Lock=0.00s (0s)  Rows=25.0 (1425), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 51  Time=0.06s (3s)  Lock=0.00s (0s)  Rows=24.1 (1230), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 52  Time=0.06s (3s)  Lock=0.00s (0s)  Rows=24.7 (1285), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height >= N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 66  Time=0.04s (2s)  Lock=0.00s (0s)  Rows=1.0 (66), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE height >= N AND stock > N
+
+Count: 70  Time=0.04s (2s)  Lock=0.00s (0s)  Rows=1.0 (70), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_width < N
+
+Count: 60  Time=0.05s (2s)  Lock=0.00s (0s)  Rows=1.0 (60), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE width >= N AND width < N AND stock > N
+
+Count: 45  Time=0.06s (2s)  Lock=0.00s (0s)  Rows=25.0 (1125), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE depth >= N AND depth < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 43  Time=0.06s (2s)  Lock=0.00s (0s)  Rows=24.7 (1060), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE height < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 51  Time=0.05s (2s)  Lock=0.00s (0s)  Rows=1.0 (51), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price < N AND stock > N
+
+Count: 57  Time=0.04s (2s)  Lock=0.00s (0s)  Rows=1.0 (57), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height < N
+
+Count: 52  Time=0.04s (2s)  Lock=0.00s (0s)  Rows=1.0 (52), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height >= N
+
+Count: 42  Time=0.05s (2s)  Lock=0.00s (0s)  Rows=25.0 (1050), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE width < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 45  Time=0.05s (2s)  Lock=0.00s (0s)  Rows=1.0 (45), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE depth >= N AND depth < N AND stock > N
+
+Count: 43  Time=0.04s (1s)  Lock=0.00s (0s)  Rows=1.0 (43), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE height < N AND stock > N
+
+Count: 31  Time=0.06s (1s)  Lock=0.00s (0s)  Rows=24.5 (760), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE depth < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 42  Time=0.04s (1s)  Lock=0.00s (0s)  Rows=1.0 (42), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE width < N AND stock > N
+
+Count: 24  Time=0.06s (1s)  Lock=0.00s (0s)  Rows=25.0 (600), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE width >= N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 31  Time=0.05s (1s)  Lock=0.00s (0s)  Rows=1.0 (31), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE depth < N AND stock > N
+
+Count: 16  Time=0.09s (1s)  Lock=0.00s (0s)  Rows=18.4 (295), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height >= N AND door_height < N AND rent >= N AND rent < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 27  Time=0.05s (1s)  Lock=0.00s (0s)  Rows=25.0 (675), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE depth >= N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 15  Time=0.09s (1s)  Lock=0.00s (0s)  Rows=21.0 (315), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_width >= N AND door_width < N AND rent >= N AND rent < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 24  Time=0.05s (1s)  Lock=0.00s (0s)  Rows=1.0 (24), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE width >= N AND stock > N
+
+Count: 16  Time=0.07s (1s)  Lock=0.00s (0s)  Rows=1.0 (16), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height >= N AND door_height < N AND rent >= N AND rent < N
+
+Count: 27  Time=0.04s (1s)  Lock=0.00s (0s)  Rows=1.0 (27), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE depth >= N AND stock > N
+
+Count: 15  Time=0.07s (1s)  Lock=0.00s (0s)  Rows=1.0 (15), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_width >= N AND door_width < N AND rent >= N AND rent < N
+
+Count: 10  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=23.5 (235), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND price < N AND depth >= N AND depth < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 2250  Time=0.00s (0s)  Lock=0.00s (0s)  Rows=1.0 (2248), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE id = N
+
+Count: 8  Time=0.10s (0s)  Lock=0.00s (0s)  Rows=11.9 (95), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND price < N AND color = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 10  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=1.0 (10), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND price < N AND depth >= N AND depth < N AND stock > N
+
+Count: 8  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=21.2 (170), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND price < N AND height >= N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1560  Time=0.00s (0s)  Lock=0.00s (0s)  Rows=1.0 (1558), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE id = N
+
+Count: 8  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=21.2 (170), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price < N AND height >= N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 9  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=1.0 (9), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height < N AND rent >= N AND rent < N
+
+Count: 9  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=20.0 (180), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height < N AND rent >= N AND rent < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 8  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=1.0 (8), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND price < N AND color = 'S' AND stock > N
+
+Count: 7  Time=0.10s (0s)  Lock=0.00s (0s)  Rows=22.9 (160), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE kind = 'S' AND color = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 9  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=20.0 (180), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height >= N AND door_height < N AND door_width >= N AND door_width < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 9  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=20.0 (180), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height >= N AND rent >= N AND rent < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 7  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=16.4 (115), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND price < N AND height >= N AND height < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 9  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (9), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height >= N AND rent >= N AND rent < N
+
+Count: 7  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=1.0 (7), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE kind = 'S' AND color = 'S' AND stock > N
+
+Count: 8  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=1.0 (8), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price < N AND height >= N AND stock > N
+
+Count: 6  Time=0.10s (0s)  Lock=0.00s (0s)  Rows=17.5 (105), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE height >= N AND height < N AND color = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 9  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=1.0 (9), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height >= N AND door_height < N AND door_width >= N AND door_width < N
+
+Count: 175  Time=0.00s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), isucon[isucon]@localhost
+  COMMIT
+
+Count: 7  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (7), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND price < N AND height >= N AND height < N AND stock > N
+
+Count: 6  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=17.5 (105), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND price < N AND width >= N AND width < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 8  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=1.0 (8), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND price < N AND height >= N AND stock > N
+
+Count: 59  Time=0.01s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), isucon[isucon]@localhost
+  INSERT INTO isuumo.estate (id, thumbnail, name, latitude, longitude, address, rent, door_height, door_width, popularity, description, features) VALUES ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S' , 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S')
+
+Count: 6  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=1.0 (6), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE height >= N AND height < N AND color = 'S' AND stock > N
+
+Count: 6  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=1.0 (6), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND price < N AND width >= N AND width < N AND stock > N
+
+Count: 5  Time=0.10s (0s)  Lock=0.00s (0s)  Rows=19.0 (95), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_width >= N AND rent < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 59  Time=0.01s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), isucon[isucon]@localhost
+  INSERT INTO isuumo.chair (id, thumbnail, name, price, height, width, depth, popularity, stock, color, description, features, kind) VALUES ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S'), ('S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S')
+
+Count: 5  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=10.0 (50), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE depth >= N AND depth < N AND kind = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 5  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=10.0 (50), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height >= N AND door_height < N AND rent < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 5  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=19.0 (95), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price < N AND height >= N AND height < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 5  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (5), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height >= N AND door_height < N AND rent < N
+
+Count: 5  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=19.0 (95), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_width < N AND rent >= N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 5  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (5), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE depth >= N AND depth < N AND kind = 'S' AND stock > N
+
+Count: 4  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=21.2 (85), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height >= N AND rent >= N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 4  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=21.2 (85), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE depth >= N AND depth < N AND color = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 4  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=21.2 (85), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND price < N AND height < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 4  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=21.2 (85), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND height >= N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 5  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (5), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_width >= N AND rent < N
+
+Count: 3  Time=0.11s (0s)  Lock=0.00s (0s)  Rows=25.0 (75), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE depth < N AND color = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 5  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=1.0 (5), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_width < N AND rent >= N
+
+Count: 3  Time=0.11s (0s)  Lock=0.00s (0s)  Rows=26.0 (78), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE features like concat('S', 'S', 'S') AND features like concat('S', 'S', 'S') ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 3  Time=0.10s (0s)  Lock=0.00s (0s)  Rows=25.0 (75), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE depth < N AND kind = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 3  Time=0.10s (0s)  Lock=0.00s (0s)  Rows=25.0 (75), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND depth >= N AND depth < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 4  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (4), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE depth >= N AND depth < N AND color = 'S' AND stock > N
+
+Count: 3  Time=0.10s (0s)  Lock=0.00s (0s)  Rows=25.0 (75), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE height < N AND depth >= N AND depth < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 3  Time=0.10s (0s)  Lock=0.00s (0s)  Rows=25.0 (75), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND height >= N AND height < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 3  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=1.0 (3), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE depth < N AND kind = 'S' AND stock > N
+
+Count: 3  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=10.0 (30), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE height >= N AND height < N AND depth < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 4  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (4), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND price < N AND height < N AND stock > N
+
+Count: 4  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (4), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND height >= N AND stock > N
+
+Count: 3  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=1.0 (3), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE features like concat('S', 'S', 'S') AND features like concat('S', 'S', 'S')
+
+Count: 3  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=1.0 (3), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE height >= N AND height < N AND depth < N AND stock > N
+
+Count: 3  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=25.0 (75), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height >= N AND door_width >= N AND door_width < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 3  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=1.0 (3), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_width >= N AND door_width < N AND rent >= N
+
+Count: 3  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=10.0 (30), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_width >= N AND door_width < N AND rent < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 3  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=10.0 (30), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_width >= N AND rent >= N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 3  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=25.0 (75), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE height >= N AND depth < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 4  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=1.0 (4), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height >= N AND rent >= N
+
+Count: 3  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=25.0 (75), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_width >= N AND door_width < N AND rent >= N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 2  Time=0.12s (0s)  Lock=0.00s (0s)  Rows=10.0 (20), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height >= N AND door_height < N AND rent >= N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 3  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (3), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_width < N AND rent < N
+
+Count: 1000  Time=0.00s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), isucon[isucon]@localhost
+  INSERT INTO estate(id, name, description, thumbnail, address, latitude, longitude, rent, door_height, door_width, features, popularity) VALUES(N,'S','S','S','S',N.N,N.N,N,N,N,'S',N)
+
+Count: 3  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (3), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND depth >= N AND depth < N AND stock > N
+
+Count: 1000  Time=0.00s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), isucon[isucon]@localhost
+  INSERT INTO chair(id, name, description, thumbnail, price, height, width, depth, color, features, kind, popularity, stock) VALUES(N,'S','S','S',N,N,N,N,'S','S','S',N,N)
+
+Count: 3  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=25.0 (75), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_width < N AND rent < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 5  Time=0.04s (0s)  Lock=0.00s (0s)  Rows=1.0 (5), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price < N AND height >= N AND height < N AND stock > N
+
+Count: 3  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (3), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height < N AND door_width >= N AND door_width < N
+
+Count: 3  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (3), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height >= N AND door_width >= N AND door_width < N
+
+Count: 2  Time=0.11s (0s)  Lock=0.00s (0s)  Rows=10.0 (20), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE width >= N AND width < N AND kind = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 3  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (3), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE depth < N AND color = 'S' AND stock > N
+
+Count: 3  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (3), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE height < N AND depth >= N AND depth < N AND stock > N
+
+Count: 3  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (3), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_width >= N AND door_width < N AND rent < N
+
+Count: 2  Time=0.10s (0s)  Lock=0.00s (0s)  Rows=10.0 (20), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE height >= N AND color = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 3  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=25.0 (75), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height < N AND door_width >= N AND door_width < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 2  Time=0.10s (0s)  Lock=0.00s (0s)  Rows=10.0 (20), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND price < N AND kind = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 3  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=1.0 (3), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_width >= N AND rent >= N
+
+Count: 2  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=10.0 (20), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND width >= N AND width < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 2  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=1.0 (2), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND price < N AND kind = 'S' AND stock > N
+
+Count: 2  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=10.0 (20), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND price < N AND width < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 2  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=10.0 (20), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE height < N AND color = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 2  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=1.0 (2), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND price < N AND features LIKE CONCAT('S', 'S', 'S') AND features LIKE CONCAT('S', 'S', 'S') AND features LIKE CONCAT('S', 'S', 'S') AND stock > N
+
+Count: 3  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=1.0 (3), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE height >= N AND depth < N AND stock > N
+
+Count: 2  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=10.0 (20), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE height >= N AND depth >= N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 3  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=1.0 (3), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND height >= N AND height < N AND stock > N
+
+Count: 2  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=1.0 (2), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND price < N AND depth < N AND stock > N
+
+Count: 2  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=10.0 (20), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_width < N AND rent >= N AND rent < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 2  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=1.0 (2), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE height < N AND color = 'S' AND stock > N
+
+Count: 2  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=1.0 (2), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE height >= N AND depth >= N AND stock > N
+
+Count: 2  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=10.0 (20), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_width >= N AND rent >= N AND rent < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 2  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=1.0 (2), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_width >= N AND rent >= N AND rent < N
+
+Count: 2  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=1.0 (2), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE width >= N AND width < N AND kind = 'S' AND stock > N
+
+Count: 2  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (2), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND width >= N AND width < N AND stock > N
+
+Count: 2  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (2), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height >= N AND door_height < N AND rent >= N
+
+Count: 2  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (2), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_width < N AND rent >= N AND rent < N
+
+Count: 2  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND price < N AND features LIKE CONCAT('S', 'S', 'S') AND features LIKE CONCAT('S', 'S', 'S') AND features LIKE CONCAT('S', 'S', 'S') AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.13s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE features LIKE CONCAT('S', 'S', 'S') AND features LIKE CONCAT('S', 'S', 'S') AND features LIKE CONCAT('S', 'S', 'S') AND stock > N
+
+Count: 2  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=1.0 (2), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND price < N AND width < N AND stock > N
+
+Count: 1  Time=0.12s (0s)  Lock=0.00s (0s)  Rows=25.0 (25), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE features LIKE CONCAT('S', 'S', 'S') AND features LIKE CONCAT('S', 'S', 'S') AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.12s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE features LIKE CONCAT('S', 'S', 'S') AND features LIKE CONCAT('S', 'S', 'S') AND features LIKE CONCAT('S', 'S', 'S') AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 2  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=1.0 (2), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE height >= N AND color = 'S' AND stock > N
+
+Count: 1  Time=0.12s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE width < N AND kind = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 2  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=10.0 (20), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND price < N AND depth < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.11s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE width >= N AND width < N AND depth >= N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.11s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND width >= N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.11s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE height < N AND width < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.11s (0s)  Lock=0.00s (0s)  Rows=4.0 (4), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE width >= N AND width < N AND features LIKE CONCAT('S', 'S', 'S') AND features LIKE CONCAT('S', 'S', 'S') AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.11s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE width >= N AND width < N AND color = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.11s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_width >= N AND door_width < N AND features like concat('S', 'S', 'S') AND features like concat('S', 'S', 'S') AND features like concat('S', 'S', 'S') ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.10s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND color = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.10s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price < N AND depth < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.10s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height < N AND rent < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE height < N AND width < N AND stock > N
+
+Count: 1  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE width >= N AND width < N AND features LIKE CONCAT('S', 'S', 'S') AND features LIKE CONCAT('S', 'S', 'S') AND stock > N
+
+Count: 1  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE width < N AND depth >= N AND depth < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height < N AND door_width >= N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price < N AND width >= N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE height < N AND kind = 'S' AND stock > N
+
+Count: 1  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height >= N AND door_height < N AND door_width < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE height >= N AND height < N AND width >= N AND width < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_width >= N AND door_width < N AND features like concat('S', 'S', 'S') AND features like concat('S', 'S', 'S') AND features like concat('S', 'S', 'S')
+
+Count: 1  Time=0.09s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE price >= N AND height < N AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height >= N AND rent < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE depth >= N AND color = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE height < N AND kind = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE features like concat('S', 'S', 'S') AND features like concat('S', 'S', 'S') AND features like concat('S', 'S', 'S')
+
+Count: 1  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE width < N AND color = 'S' AND stock > N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE height >= N AND height < N AND width >= N AND width < N AND stock > N
+
+Count: 1  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE width < N AND depth >= N AND depth < N AND stock > N
+
+Count: 171  Time=0.00s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), isucon[isucon]@localhost
+  UPDATE chair SET stock = stock - N WHERE id = N
+
+Count: 1  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height >= N AND door_width < N
+
+Count: 1  Time=0.08s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE features like concat('S', 'S', 'S') AND features like concat('S', 'S', 'S') AND features like concat('S', 'S', 'S') ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height < N AND rent >= N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE width >= N AND width < N AND color = 'S' AND stock > N
+
+Count: 1  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height < N AND rent < N
+
+Count: 1  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height >= N AND door_width >= N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price < N AND width >= N AND stock > N
+
+Count: 1  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height >= N AND door_height < N AND door_width < N
+
+Count: 1  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height >= N AND door_width >= N
+
+Count: 1  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND color = 'S' AND stock > N
+
+Count: 1  Time=0.07s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE width < N AND kind = 'S' AND stock > N
+
+Count: 1  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE depth >= N AND color = 'S' AND stock > N
+
+Count: 1  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height < N AND rent >= N
+
+Count: 1  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=10.0 (10), isucon[isucon]@localhost
+  SELECT * FROM estate WHERE door_height >= N AND door_width < N ORDER BY popularity DESC, id ASC LIMIT N OFFSET N
+
+Count: 1  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND height < N AND stock > N
+
+Count: 1  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height < N AND door_width >= N
+
+Count: 1  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price < N AND depth < N AND stock > N
+
+Count: 1  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE features LIKE CONCAT('S', 'S', 'S') AND features LIKE CONCAT('S', 'S', 'S') AND stock > N
+
+Count: 1  Time=0.06s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM estate WHERE door_height >= N AND rent < N
+
+Count: 1  Time=0.05s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE width < N AND color = 'S' AND stock > N
+
+Count: 171  Time=0.00s (0s)  Lock=0.00s (0s)  Rows=1.0 (171), isucon[isucon]@localhost
+  SELECT * FROM chair WHERE id = N AND stock > N FOR UPDATE
+
+Count: 1  Time=0.05s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE width >= N AND width < N AND depth >= N AND stock > N
+
+Count: 1  Time=0.05s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT COUNT(*) FROM chair WHERE price >= N AND width >= N AND stock > N
+
+Count: 175  Time=0.00s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), isucon[isucon]@localhost
+  START TRANSACTION
+
+Count: 1  Time=0.01s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), isucon[isucon]@localhost
+  CREATE TABLE isuumo.estate
+  (
+  id          INTEGER             NOT NULL PRIMARY KEY,
+  name        VARCHAR(N)         NOT NULL,
+  description VARCHAR(N)       NOT NULL,
+  thumbnail   VARCHAR(N)        NOT NULL,
+  address     VARCHAR(N)        NOT NULL,
+  latitude    DOUBLE PRECISION    NOT NULL,
+  longitude   DOUBLE PRECISION    NOT NULL,
+  rent        INTEGER             NOT NULL,
+  door_height INTEGER             NOT NULL,
+  door_width  INTEGER             NOT NULL,
+  features    VARCHAR(N)         NOT NULL,
+  popularity  INTEGER             NOT NULL
+  )
+
+Count: 1  Time=0.01s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), isucon[isucon]@localhost
+  CREATE TABLE isuumo.chair
+  (
+  id          INTEGER         NOT NULL PRIMARY KEY,
+  name        VARCHAR(N)     NOT NULL,
+  description VARCHAR(N)   NOT NULL,
+  thumbnail   VARCHAR(N)    NOT NULL,
+  price       INTEGER         NOT NULL,
+  height      INTEGER         NOT NULL,
+  width       INTEGER         NOT NULL,
+  depth       INTEGER         NOT NULL,
+  color       VARCHAR(N)     NOT NULL,
+  features    VARCHAR(N)     NOT NULL,
+  kind        VARCHAR(N)     NOT NULL,
+  popularity  INTEGER         NOT NULL,
+  stock       INTEGER         NOT NULL
+  )
+
+Count: 3  Time=0.00s (0s)  Lock=0.00s (0s)  Rows=1.0 (3), isucon[isucon]@localhost
+  select @@version_comment limit N
+
+Count: 1  Time=0.00s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), isucon[isucon]@localhost
+  CREATE DATABASE isuumo
+
+Count: 1  Time=0.00s (0s)  Lock=0.02s (0s)  Rows=0.0 (0), isucon[isucon]@localhost
+  DROP DATABASE IF EXISTS isuumo
+
+Count: 1  Time=0.00s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), isucon[isucon]@localhost
+  DROP TABLE IF EXISTS isuumo.estate
+
+Count: 1  Time=0.00s (0s)  Lock=0.00s (0s)  Rows=1.0 (1), isucon[isucon]@localhost
+  SELECT DATABASE()
+
+Count: 1  Time=0.00s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), isucon[isucon]@localhost
+  DROP TABLE IF EXISTS isuumo.chair
+
+Count: 41615  Time=0.00s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), 0users@0hosts
+  administrator command: Close stmt
+
+Count: 41615  Time=0.00s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), 0users@0hosts
+  administrator command: Prepare
+
+Count: 695  Time=0.00s (0s)  Lock=0.00s (0s)  Rows=0.0 (0), 0users@0hosts
+  administrator command: Quit
+
