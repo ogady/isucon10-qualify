@@ -21,7 +21,7 @@ CREATE TABLE isuumo.estate
 
     INDEX `door_width_index` (`door_width`),
     INDEX `door_height_index` (`door_height`),
-    INDEX `hwpi_index` (`door_height`, `door_width`, `popularity_desc`, `id`),
+    INDEX `hwpi_index` (`door_height`, `door_width`, `popularity_desc`, `id`)
 );
 
 CREATE TABLE isuumo.chair
